@@ -1,4 +1,4 @@
-local GameName = "Server Killer - By Nexer1234"
+local GameName = "Server Killer 💢💥 - By Nexer1234"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({IntroText = "Server Lagger/Killer 💢💥", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
