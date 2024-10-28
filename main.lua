@@ -35,8 +35,9 @@ Scripts:AddToggle({
 _G.DiamondLagger = Value
 while _G.DiamondLagger == true do
 game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
+wait(0.005)
 game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServer()
-wait(0.01)
+wait(0.005)
 end
 	 end
 })
