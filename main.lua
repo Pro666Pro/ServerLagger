@@ -29,7 +29,7 @@ fireclickdetector(workspace.Lobby["Diamond"].ClickDetector)
 })
 
 Scripts:AddToggle({
-	Name = "Diamond Glove Lagger { Diamond Glove Required }",
+	Name = "Diamond Glove Lagger { Diamond Glove Required, btw its very weak }",
 		
   	Default = false,
 	Callback = function(Value)
