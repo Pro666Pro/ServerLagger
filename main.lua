@@ -30,13 +30,48 @@ fireclickdetector(workspace.Lobby["Diamond"].ClickDetector)
 
 Scripts:AddToggle({
 	Name = "Diamond Glove Lagger { Diamond Glove Required }",
+		
   	Default = false,
 	Callback = function(Value)
 _G.DiamondLagger = Value
 while _G.DiamondLagger == true do
 game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
-wait(0.0000000000000001)
+wait(0.00000000000000000000000000000000000000000000000000000000000000000000000001)
 game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServer()
+end
+	 end
+})
+
+Scripts:AddButton({
+	Name = "Equip Glovel",
+	Callback = function(Value)
+fireclickdetector(workspace.Lobby["Glovel"].ClickDetector)
+	 end
+})
+
+Scripts:AddButton({
+	Name = "TURN ON GLOVEL KILLER",
+	Callback = function(Value)
+game:GetService("ReplicatedStorage").DigEvent:FireServer("start")
+wait(3)
+for i = 1, 1000 do
+game:GetService("ReplicatedStorage").GlovelFunc:InvokeServer()
+end
+	 end
+})
+
+Scripts:AddToggle({
+	Name = "Glovel Killer Anti-Lag",
+  	Default = false,
+	Callback = function(Value)
+_G.AntiLag = Value
+while _G.AntiLag do
+for i,v in pairs(game.Workspace:GetChildren()) do
+                    if v.Name == "Part" then
+                        v:Destroy()
+                    end
+                end
+task.wait()
 end
 	 end
 })
