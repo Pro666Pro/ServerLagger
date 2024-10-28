@@ -11,7 +11,7 @@ S.Name = "Baseplate"
 S.Anchored = true
 S.CanCollide = true
 S.Transparency = 0
-S.Position = Vector3.new(-200000, -200000, -200000)
+S.Position = Vector3.new(-100000, 100000, -100000)
 S.Size = Vector3.new(1000, 10, 1000)
 S.Parent = workspace
 end
