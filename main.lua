@@ -4,10 +4,10 @@ for _,v in pairs(game.Players:GetChildren()) do
                     end
                 end
 
-local GameName = "Server Lagger - By Nexer1234"
+local GameName = "Server Killer - By Nexer1234"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Server Lagger MUAHAHA x99999", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
+local Window = OrionLib:MakeWindow({IntroText = "Server Lagger MUAHAHAHAHAHHHA", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
 
 OrionLib:MakeNotification({Name = "Warning",Content = "Use at your own risk.",Image = "rbxassetid://7733658504",Time = 5})
 
