@@ -7,7 +7,7 @@ for _,v in pairs(game.Players:GetChildren()) do
 local GameName = "Server Lagger - By Nexer1234"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Server Lagger MUAHAHA", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
+local Window = OrionLib:MakeWindow({IntroText = "Server Lagger MUAHAHA x99999", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
 
 OrionLib:MakeNotification({Name = "Warning",Content = "Use at your own risk.",Image = "rbxassetid://7733658504",Time = 5})
 
@@ -35,7 +35,7 @@ Scripts:AddToggle({
 _G.DiamondLagger = Value
 while _G.DiamondLagger == true do
 game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
-wait(0.0000001)
+wait(0.0000000000000001)
 game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServer()
 end
 	 end
