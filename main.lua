@@ -36,6 +36,7 @@ _G.DiamondLagger = Value
 while _G.DiamondLagger == true do
 game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
 game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServer()
+wait(0.01)
 end
 	 end
 })
