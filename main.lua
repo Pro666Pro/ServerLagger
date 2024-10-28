@@ -49,7 +49,7 @@ fireclickdetector(workspace.Lobby["Glovel"].ClickDetector)
 	 end
 })
 
-Scripts:AddButton({
+Scripts:AddTextbox({
 	Name = "Glovel Killer Power",
 	Default = "Input",
     	TextDisappear = false,
