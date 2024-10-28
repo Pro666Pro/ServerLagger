@@ -1,9 +1,3 @@
-for _,v in pairs(game.Players:GetChildren()) do
-                    if v.Character:FindFirstChild("rock") then
-                        v.Character:Destroy()
-                    end
-                end
-
 local GameName = "Server Killer - By Nexer1234"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
