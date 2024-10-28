@@ -1,7 +1,7 @@
 local GameName = "Server Killer 💢💥 - By Nexer1234"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Server Killer 💢", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
+local Window = OrionLib:MakeWindow({IntroText = "Server Killer 💢💫", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
 
 OrionLib:MakeNotification({Name = "Warning",Content = "Use at your own risk.",Image = "rbxassetid://7733658504",Time = 5})
 
@@ -44,7 +44,7 @@ _G.Power = Value
 
 Scripts:AddButton({
 	Name = "TURN ON GLOVEL KILLER",
-	Callback = function(Value)
+	Callback = function()
 game:GetService("ReplicatedStorage").DigEvent:FireServer("start")
 wait(3)
 for i = 1, _G.Power do
@@ -56,13 +56,20 @@ game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text =
 
 Scripts:AddButton({
 	Name = "TURN OFF GLOVEL KILLER",
-	Callback = function(Value)
+	Callback = function()
 game:GetService("ReplicatedStorage").GlovelCancel:FireServer()
 	 end
 })
 
+Scripts:AddButton({
+	Name = "Give 1 power { Use While Glovel Killer Turned On }",
+	Callback = function()
+game:GetService("ReplicatedStorage").GlovelFunc:InvokeServer()
+	 end
+})
+
 Scripts:AddToggle({
-	Name = "Glovel Killer Anti-Lag",
+	Name = "Glovel Killer Anti-Lag { a bit less lags }",
   	Default = false,
 	Callback = function(Value)
 _G.AntiLag = Value
@@ -74,5 +81,12 @@ for i,v in pairs(game.Workspace:GetChildren()) do
                 end
 wait(0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001)
 end
+	 end
+})
+
+Scripts:AddButton({
+	Name = "Teleport Safe Place",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace["Baseplate"].CFrame * CFrame.new(0,10,0)
 	 end
 })
