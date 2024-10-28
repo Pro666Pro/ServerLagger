@@ -55,13 +55,6 @@ game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text =
 })
 
 Scripts:AddButton({
-	Name = "TURN OFF GLOVEL KILLER",
-	Callback = function()
-game:GetService("ReplicatedStorage").GlovelCancel:FireServer()
-	 end
-})
-
-Scripts:AddButton({
 	Name = "Give 1 power { Use While Glovel Killer Turned On }",
 	Callback = function()
 game:GetService("ReplicatedStorage").GlovelFunc:InvokeServer()
