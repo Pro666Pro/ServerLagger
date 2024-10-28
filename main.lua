@@ -87,6 +87,7 @@ for i,v in pairs(game.Workspace:GetChildren()) do
                         v:Destroy()
                     end
                 end
+wait(0.000001)
 end
 	 end
 })
