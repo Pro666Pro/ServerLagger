@@ -33,7 +33,7 @@ Scripts:AddToggle({
   	Default = false,
 	Callback = function(Value)
 _G.DiamondLagger = Value
-if _G.DiamondLagger == true do
+if _G.DiamondLagger == true then do
 game:GetService("ReplicatedStorage"):WaitForChild("Rockmode"):FireServer()
 game:GetService("ReplicatedStorage"):WaitForChild("DeactivateRockmode"):FireServer()
 until _G.DiamondLagger == false
